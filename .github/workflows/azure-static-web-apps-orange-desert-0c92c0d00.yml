@@ -37,6 +37,7 @@ jobs:
       - name: Close pull request
         uses: actions/github-script@v5
         with:
+          node-version: '20'
           script: |
             github.issues.update({
               owner: context.repo.owner,
